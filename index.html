@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Encriptador</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img class="logo" src="img/logo.png" alt="logo encrptador">
+</header>
+  <div class="container">
+    <h1>PÁGINA ENCRIPTADOR</h1>
+    <label for="text">Escribe texto:</label>
+    <input type="text" id="text">
+
+    <div>
+      <h6 class="informacion">* Solo letras minusculas y sin acento</h6>
+    </div>
+
+    <button onclick="encrypt()">Encriptar</button>
+    <button onclick="decrypt()">Desencriptar</button>
+    
+    <div class="result" id="result"></div>
+    
+    <button class="btn-copiar redondo" id="btn-copiar" onclick="copyText()">Copiar Texto</button>
+  </div>
+  
+  <footer>
+    <img class="logo" src="img/logopie.png" alt="logotipo" >
+    <p class="copyright">&copy Copyright Luis Carlos Bautista Barrueta 2023</p>
+</footer>   
+  
+  <script src="script.js"></script>
+</body>
+</html>
+
